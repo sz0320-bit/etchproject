@@ -1,0 +1,10 @@
+*{
+
+}
+
+#mainbox{
+    height: 50em;
+    position: absolute;
+    width: 50em;
+    right: 1rem;
+}

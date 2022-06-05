@@ -11,7 +11,8 @@ function gridthingy(){
 }
 
 
-const gridItems = document.querySelectorAll('#grid-container > div');
-gridItems.onmouseover = function(){
-    gridItems.style.cssText = 'background-color: black;';
-}
+//const gridItems = document.querySelectorAll('#grid-container > div');
+//gridItems.addEventListener('mouseover',
+   // (e) => e.target.classList.toggle('active')
+//);
+

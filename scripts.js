@@ -9,7 +9,29 @@ function gridthingy(){
         divbox.appendChild(gridbox);
     }
 }
+window.onresize = (function (){
+    let textbox = document.querySelector('.text');
+    let mainbox = document.querySelector('#mainbox');
+    let bigbox = document.querySelector('.bigbox');
+    console.log(bigbox.clientWidth);
+    console.log(mainbox.clientWidth);
+    let g = (bigbox.clientWidth - mainbox.clientWidth) -50;
+    console.log(g);
+    textbox.style.width = g+'px';
+    console.log(textbox.clientWidth)
+});
 
+function setwidth(){
+    let textbox = document.querySelector('.text');
+    let mainbox = document.querySelector('#mainbox');
+    let bigbox = document.querySelector('.bigbox');
+    console.log(bigbox.clientWidth);
+    console.log(mainbox.clientWidth);
+    let g = (bigbox.clientWidth - mainbox.clientWidth) -50;
+    console.log(g);
+    textbox.style.width = g+'px';
+    console.log(textbox.clientWidth)
+}
 
 //const gridItems = document.querySelectorAll('#grid-container > div');
 //gridItems.addEventListener('mouseover',

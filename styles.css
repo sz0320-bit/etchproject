@@ -7,6 +7,7 @@ body{
     width: 66em;
     right: 1rem;
     border: solid 4px white;
+    top: 0.8em;
 }
 #mainbox .box:hover {
     background-color: white;
@@ -20,6 +21,13 @@ body{
     margin-top: 4px;
     margin-bottom: -2px;
 }
-#mainbox:last-child{
-    margin-right: 0px;
+.text{
+    border: solid 4px red;
+    height: 56.25em;
+}
+.bigbox{
+    border: solid 4px white;
+    justify-items: center;
+    height: 58em;
+
 }

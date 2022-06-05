@@ -8,6 +8,8 @@ function gridthingy(){
         gridbox.style.cssText = "display:inline-block;height:3.125em;width:3.125em;border: solid 4px white;";
         divbox.appendChild(gridbox);
     }
+    document.querySelector("#generate").disabled = true;
+    document.querySelector("#reset").disabled = false;
 }
 window.onresize = (function (){
     let textbox = document.querySelector('.text');
@@ -32,6 +34,16 @@ function setwidth(){
     textbox.style.width = g+'px';
     console.log(textbox.clientWidth)
 }
+
+function reset(){
+    const grid = document.querySelector('#mainbox');
+    while (grid.firstChild) {
+        grid.removeChild(grid.firstChild);
+    }
+    document.querySelector("#generate").disabled = false;
+    document.querySelector("#reset").disabled = true;
+}
+
 
 //const gridItems = document.querySelectorAll('#grid-container > div');
 //gridItems.addEventListener('mouseover',

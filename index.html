@@ -5,10 +5,14 @@
     <title>Etch</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body onload="setwidth()">
+<body onload="setwidth()" onload="">
 <div class="bigbox">
     <div class="text">
-        <input id="clickme" type="button" value="clickme" onclick="gridthingy()">
+        <h1 class="mainHeader">Etch a Sketch</h1>
+        <br>
+        <p class="mainDesc">press start to begin<br>press reset to start over</p>
+        <input id="generate" type="button" value="generate" onclick="gridthingy()">
+        <input id="reset" type="button" value="reset" onclick="reset()" disabled>
     </div>
     <div id="mainbox">
     </div>

@@ -1,17 +1,25 @@
-*{
-
-}
-
-#mainbox{
-    height: 50em;
-    position: absolute;
-    width: 50em;
-    right: 1rem;
-}
-#mainbox div:hover {
+body{
     background-color: black;
-    transition-delay:0s;
 }
-#mainbox div{
+#mainbox{
+    height: 56.25em;
+    position: absolute;
+    width: 66em;
+    right: 1rem;
+    border: solid 4px white;
+}
+#mainbox .box:hover {
+    background-color: white;
+    transition-delay:0s;
+    border-right: 2.5px;
+    border-left: 2.5px;
+}
+#mainbox .box{
     transition-delay: 100000000000000s;
+    margin: 4px;
+    margin-top: 4px;
+    margin-bottom: -2px;
+}
+#mainbox:last-child{
+    margin-right: 0px;
 }
